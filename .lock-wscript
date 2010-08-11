@@ -1,0 +1,9 @@
+argv = ['/usr/local/bin/node-waf', 'configure', 'build']
+blddir = '/Users/scott/devel/joyent/node-posixfork/build'
+commands = {'dist': 0, 'configure': True, 'distcheck': 0, 'install': 0, 'build': True, 'clean': 0, 'distclean': 0, 'check': 0, 'uninstall': 0}
+cwd = '/Users/scott/devel/joyent/node-posixfork'
+environ = {'SSH_AUTH_SOCK': '/tmp/launch-Hd2bCA/Listeners', 'PERL_MM_OPT': 'INSTALL_BASE=/Users/scott/local/locallib', 'VERSIONER_PYTHON_PREFER_32_BIT': 'no', 'TERM_PROGRAM_VERSION': '273', 'MODULEBUILDRC': '/Users/scott/local/locallib/.modulebuildrc', 'SHELL': '/bin/bash', 'LOGNAME': 'scott', 'USER': 'scott', 'HOME': '/Users/scott', 'PATH': '/Users/scott/local/locallib/bin:/Users/scott/local/perl/bin:/opt/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/sbin', 'DISPLAY': '/tmp/launch-Y5I2Nb/org.x:0', '_': '/usr/local/bin/node-waf', 'TERM_PROGRAM': 'Apple_Terminal', 'LANG': 'en_CA.UTF-8', 'PERL5LIB': '/Users/scott/local/locallib/lib/perl5:/Users/scott/local/locallib/lib/perl5/darwin-2level', 'TERM': 'xterm-color', 'Apple_PubSub_Socket_Render': '/tmp/launch-YiEG2f/Render', 'VERSIONER_PYTHON_VERSION': '2.6', 'SHLVL': '1', 'OLDPWD': '/Users/scott', '__CF_USER_TEXT_ENCODING': '0x1F5:0:0', 'PWD': '/Users/scott/devel/joyent/node-posixfork', 'TMPDIR': '/var/folders/Mn/MndchFV6FM4DcRv+j9bz0k+++TI/-Tmp-/', 'LS_COLORS': '', 'COMMAND_MODE': 'unix2003'}
+files = []
+hash = 0
+options = {'compile_targets': None, 'force': False, 'verbose': 0, 'nocache': False, 'progress_bar': 0, 'destdir': '', 'keep': False, 'zones': '', 'blddir': '', 'prefix': '/usr/local/', 'jobs': 2, 'srcdir': '', 'check_cxx_compiler': 'g++'}
+srcdir = '/Users/scott/devel/joyent/node-posixfork'
