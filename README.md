@@ -6,13 +6,13 @@ node-processctl - Process control addon for node
 SYNOPSIS
 --------
 
-  var pctl = require('processctl');
-  var child_pid = pctl.fork();
-  if(child_pid) {
-    sys.puts("I'm the parent");
-  } else {
-    sys.puts("I'm the child");
-  }
+    var pctl = require('processctl');
+    var child_pid = pctl.fork();
+    if(child_pid) {
+      sys.puts("I'm the parent");
+    } else {
+      sys.puts("I'm the child");
+    }
 
 BUILDING
 --------
