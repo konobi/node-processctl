@@ -2,7 +2,7 @@
 #include <node.h>
 #include <stdlib.h>
 #include <unistd.h>
-
+#include <node_events.h>
 #include "binding.h"
 
 using namespace v8;
@@ -20,10 +20,15 @@ Handle<Value> ProcessControl::Fork(const Arguments& args) {
     int child_pid = fork();
     if(child_pid == 0){
       pid_return = Integer::New(0);
+      
       // since node statically sets it's PID at startup, we need to reset it
       Local<Object> process = v8::Context::GetCurrent()->Global();
       Local<Object> node_obj = process->Get(String::NewSymbol("process"))->ToObject();
       node_obj->Set(String::New("pid"), Integer::New(getpid())); 
+      
+      // Tell libev that we've forked
+      ev_default_fork();
+
     } else {
       pid_return = Integer::New(child_pid);
     }
